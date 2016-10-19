@@ -1,0 +1,12 @@
+# TODO: Add mount point if needed
+[Unit]
+Description=Server
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Slice=machine.slice
+ExecStart=/usr/bin/rkt run --net=host --insecure-options=image /home/core/server.aci
+ExecStopPost=/usr/bin/rkt gc --mark-only=true
+KillMode=mixed
+Restart=always

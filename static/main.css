@@ -1,0 +1,65 @@
+/**********************************************************
+Written by Faraz Fazli - Released under the Apache License
+https://github.com/farazfazli/silo
+
+I am not the best at CSS, so if you can make this more
+responsive, I am open to PR's :)
+***********************************************************/
+
+@import url("reset.css");
+
+* {
+  	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 4em;
+	color: blue;
+}
+
+h2 {
+	font-size: 2em;
+	color: blue;
+}
+
+input {
+	width: 200px;
+	height: 50px;
+	color: blue;
+	text-decoration-color: blue;
+	border-color: blue;
+	outline: 0 none;
+	background: white;
+	padding: 10px;
+	margin: 2px;
+}
+
+input:focus {
+/*	background: blue;
+	color: white;*/
+}
+
+input:hover[type=submit] {
+	background: blue;
+	color: white;
+}
+
+p {
+	color: blue;
+}
+
+a {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#dashboard {
+	text-align:center;
+}
+
+#apk {
+	opacity: 0;
+	display: none;
+	z-index: -1;
+}

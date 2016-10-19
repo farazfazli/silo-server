@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Silo Live</title>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!-- meta properties -->
+<meta name="author" content="Faraz Fazli">
+<meta property="subject" content="Realtime messaging for Android">
+<meta property="description" content="Seamless updating for native Android applications. Open-source and realtime modular two-way messaging engine.">
+<meta property=”og:title” content="Silo Live">
+<meta property=”og:type” content="website">
+<meta property="og:image" content="https://dummyimage.com/600x400/ffffff/0011ff.png&text=Silo">
+<meta property=”og:url” content=”https://silo.live/”>
+<meta property="og:description" content="Seamless updating for native Android applications. Open-source and realtime modular two-way messaging engine. Powered by Go (Golang).">
+<meta property="twitter:title" content="Silo Live. Seamless updating for native Android applications. Open-source and realtime modular two-way messaging engine.">
+<meta property="twitter:creator" content="@farazfazli">
+<meta property="twitter:image" content="https://dummyimage.com/60x60/ffffff/0011ff.png&text=Silo">
+<meta name="rating" content="General">
+<meta name="geo.region" content="US-NY">
+<meta name="geo.placename" content="New York">
+<meta name="keywords" content="android, open, source, github, auto, update, analytics, golang, go">
+<!-- /meta properties -->
+<!-- favicon -->
+<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAeCAYAAAAl+Z4RAAAAAXNSR0IArs4c6QAAAsNJREFUOBGF
+Vc1LVFEU/93ncxxt1NFMJYSxwFAMKsoUoi9w0arC2vQXFAitbFULl9E+aNGmRdAHTUaLIBBapUVf
+9LWQkKQS+h4VZXKaOf3ue/M+7pt504XLPef8zvm9c+895z6FaqNXkmOfsxNZjK1DYaXsoiBIU/+J
+JO5gRf2oFgpskhTq5doV6/TVwZZ37YbTIbGJjcCWCbSIiTmOIooOZziHBbjAaRsEnkKcPjfBTC3P
+5qwJ7GKKSyioJ4Y9qmjcwnUsYswkUNjCfc6V/ae5FqOxvp7HfZSQMQkE3TygBe2kgBlO7iJmKKWx
+kkkAJNCAPzEhprlJNvMrq1GCHFbRZnrGaAUcITJjElj4wqT7YkICc0IGqTTgPF4GRi1tkC4k5BJ6
+pNEEQlpKOlkH56DXqsOWA7zjsxiURAWubfWyA63ib5MHXWXYsp/WYc7HSOE9cipXxcsxVSfQkE6x
+gBFWQh9Pu8jC+cA7mo3vgbhPaLuue1v2cT5EUrbWcvUxVkk3Z8Y3aEEH60bSTVUe5jV6Vnft5TJg
+mPJqnttZx7OgVgIC3cYJOYm0pI2gqKLwlRQbPbNLMCkWcjjFIvpU68SdIOG91LFey8MluIjDTG3t
+v23sBvHBCRMkJYO/fAc6cNdjjV2bpYOYhWX1y/OxeMPHyXgDi2rNM8aueb4XCvNh3KLhO/feHzbW
+kPfy+6/CuMXUp7iFnbzj3jBQITdKD20KebUQxiwndRtZkpyo2YVFHGTgbDhYy+4t6AKpwxt8w7Go
+g6Pr16eELvb/iygeFNJRTPMs2tiuu6NObKpRJv8Ik6oUxQKC26rIB/UWSUbRLH6lsTr1AadYfZHX
+x6WqbGc3g6FlaXnN/0y61Vraxu1N8fA+Rr+udb+rfLCgnvOrfeO4vKcdv5uY+lxcsI4JtuAzUOjE
+vbel7QNPZaif8oMwFJX/AVfcx0fBzSS9AAAAAElFTkSuQmCC" rel="icon" type="image/x-icon">
+<!-- /favicon -->
+</head>
+<center>
+<!-- Start Header -->
+<h1>Silo Live</h1>
+<p>Seamless updating for native Android applications.</p><hr>
+<!--  End Header -->
+<!--    Login    -->
+<div id="login" style="display:none;">
+<form onsubmit="submitLoginFormWithData();return false;">
+<input type="email" id="email" placeholder="Email"><br>
+<input type="password" id="password" placeholder="Password"><br>
+<input type="submit" id="submit" value="Login"><br>
+</form>
+<a id="switch">Create an account</a>
+</div>
+<!--    End Login 	 -->
+<!-- Start Dashboard -->
+<div id="dashboard" style="visibility:hidden;">
+<h2>Dashboard</h2>
+<a id="logout">Logout</a>&nbsp;<em id="response"></em><br><br>
+<form enctype="multipart/form-data" onsubmit="submitUploadFormWithData();return false;">
+<input id="package" placeholder="Plugin Package Name"><br>
+<input id="hash" placeholder="Application Hash"><br>
+<input type="file" id="apk" placeholder="File Location" onchange="onUploadChange();" accept=".apk"><input id="upload" type="submit" value="Choose APK"><br>
+</form>
+</div>
+<!--  End Dashboard  -->
+</center>
+<script src="main.js" type="text/javascript"></script>
+<noscript>You need JavaScript to use this service.</noscript>
+</html>
