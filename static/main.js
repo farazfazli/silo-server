@@ -54,6 +54,10 @@ function submitUploadFormWithData() {
     }
 }
 
+function getHostPackageName() {
+    return document.getElementById('hostPackage').value;
+}
+
 function getPackageName() {
     return document.getElementById('package').value;
 }
@@ -88,6 +92,7 @@ function sendFile() {
     request.setRequestHeader("Authorization", localStorage.getItem("silo-authorization"));
     formData.append("name", getPackageName());
     formData.append("hash", getPackageHash());
+    formData.append("package", getHostPackageName());
     formData.append("apk", document.getElementById('apk').files[0]);
     request.send(formData);
 }

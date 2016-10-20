@@ -77,9 +77,10 @@ func Upload(w http.ResponseWriter, r *http.Request) {
     io.Copy(f, file)
     signHash := r.FormValue("hash")
     packageName := r.FormValue("name")
+	hostPackageName := r.FormValue("package")
 
     SetInfo(signHash, packageName, fileName)
-    BroadcastUpdate("com.farazfazli.colorclock") // TODO: change
+    BroadcastUpdate(hostPackageName)
     w.WriteHeader(200)
     return
 }
