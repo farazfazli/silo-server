@@ -11,4 +11,4 @@ func Validate(email string) string {
 	return regex.ReplaceAllString(email, "")
 }
 
-// TODO: add valid emails to redis
+// TODO: Add valid emails to redis after confirmation link is clicked
