@@ -1,5 +1,5 @@
 # silo-server
-Server for Silo
+Server side implementation for Silo. Realtime modular applications on Android: auto-updating, analytics, and more. I made the server and client side integration in 6 days, so it's currently beta work.
 
 For Android client side implementation, see [here] (https://github.com/farazfazli/silo/tree/master).
 
